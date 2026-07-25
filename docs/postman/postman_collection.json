@@ -1,0 +1,230 @@
+{
+  "info": {
+    "_postman_id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+    "name": "Products API - Hexagonal Challenge",
+    "description": "Test collection for Products Search API with Elasticsearch and Redis.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:3000/api/v1",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "Autocomplete",
+      "item": [
+        {
+          "name": "Autocomplete - Prefix 'lap' (Redis Cache)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/search/autocomplete?q=lap",
+              "host": ["{{baseUrl}}"],
+              "path": ["search", "autocomplete"],
+              "query": [
+                {
+                  "key": "q",
+                  "value": "lap"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Autocomplete - Prefix 'smart'",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/search/autocomplete?q=smart",
+              "host": ["{{baseUrl}}"],
+              "path": ["search", "autocomplete"],
+              "query": [
+                {
+                  "key": "q",
+                  "value": "smart"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Search & Filters",
+      "item": [
+        {
+          "name": "1. Get All Products (Paginated & Facets)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/search?page=1&limit=10",
+              "host": ["{{baseUrl}}"],
+              "path": ["search"],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "limit",
+                  "value": "10"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "2. Fuzzy Text Search ('laptob' for 'laptop')",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/search?q=laptob",
+              "host": ["{{baseUrl}}"],
+              "path": ["search"],
+              "query": [
+                {
+                  "key": "q",
+                  "value": "laptob"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "3. Filter by Category (electronics)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/search?category=electronics",
+              "host": ["{{baseUrl}}"],
+              "path": ["search"],
+              "query": [
+                {
+                  "key": "category",
+                  "value": "electronics"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "4. Filter by Multiple Subcategories (gaming & office)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/search?subcategories=gaming&subcategories=office",
+              "host": ["{{baseUrl}}"],
+              "path": ["search"],
+              "query": [
+                {
+                  "key": "subcategories",
+                  "value": "gaming"
+                },
+                {
+                  "key": "subcategories",
+                  "value": "office"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "5. Filter by Price Range (minPrice & maxPrice)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/search?minPrice=500&maxPrice=1500",
+              "host": ["{{baseUrl}}"],
+              "path": ["search"],
+              "query": [
+                {
+                  "key": "minPrice",
+                  "value": "500"
+                },
+                {
+                  "key": "maxPrice",
+                  "value": "1500"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "6. Sort by Price Descending (price_desc)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/search?sortBy=price_desc",
+              "host": ["{{baseUrl}}"],
+              "path": ["search"],
+              "query": [
+                {
+                  "key": "sortBy",
+                  "value": "price_desc"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "7. Combined Full Search (Query + Category + Range + Sort)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/search?q=gamer&category=electronics&minPrice=200&sortBy=popularity&page=1&limit=5",
+              "host": ["{{baseUrl}}"],
+              "path": ["search"],
+              "query": [
+                {
+                  "key": "q",
+                  "value": "gamer"
+                },
+                {
+                  "key": "category",
+                  "value": "electronics"
+                },
+                {
+                  "key": "minPrice",
+                  "value": "200"
+                },
+                {
+                  "key": "sortBy",
+                  "value": "popularity"
+                },
+                {
+                  "key": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "limit",
+                  "value": "5"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}

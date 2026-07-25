@@ -1,0 +1,272 @@
+[
+  {
+    "name": "ASUS ROG Strix Gaming Laptop",
+    "description": "High-performance gaming laptop with Intel i9 and RTX 4080",
+    "category": "electronics",
+    "subcategories": ["laptops", "gaming"],
+    "location": "Caracas",
+    "price": 1800,
+    "popularity": 95
+  },
+  {
+    "name": "HP Pavilion 15 Laptop",
+    "description": "Ideal laptop for work and study with Ryzen 7",
+    "category": "electronics",
+    "subcategories": ["laptops", "office"],
+    "location": "Valencia",
+    "price": 650,
+    "popularity": 80
+  },
+  {
+    "name": "Cougar Ergonomic Gaming Chair",
+    "description": "Reclining synthetic leather chair for gaming comfort",
+    "category": "home",
+    "subcategories": ["furniture", "gaming"],
+    "location": "Caracas",
+    "price": 220,
+    "popularity": 88
+  },
+  {
+    "name": "LG UltraGear 27\" Monitor",
+    "description": "Professional 144Hz 1ms IPS gaming monitor",
+    "category": "electronics",
+    "subcategories": ["monitors", "gaming"],
+    "location": "Maracaibo",
+    "price": 320,
+    "popularity": 90
+  },
+  {
+    "name": "Samsung Galaxy S24 Ultra Smartphone",
+    "description": "Flagship smartphone with 200MP camera and integrated S-Pen",
+    "category": "electronics",
+    "subcategories": ["smartphones", "android"],
+    "location": "Caracas",
+    "price": 1200,
+    "popularity": 98
+  },
+  {
+    "name": "Apple iPhone 15 Pro Max",
+    "description": "Latest iPhone model featuring a titanium body and A17 Pro chip",
+    "category": "electronics",
+    "subcategories": ["smartphones", "ios"],
+    "location": "Valencia",
+    "price": 1300,
+    "popularity": 99
+  },
+  {
+    "name": "Sony WH-1000XM5 Wireless Headphones",
+    "description": "Over-ear headphones with industry-leading noise cancellation",
+    "category": "electronics",
+    "subcategories": ["audio", "accessories"],
+    "location": "Barquisimeto",
+    "price": 350,
+    "popularity": 92
+  },
+  {
+    "name": "Keychron K2 V2 Mechanical Keyboard",
+    "description": "Wireless mechanical keyboard with Gateron Brown tactile switches",
+    "category": "electronics",
+    "subcategories": ["keyboard", "accessories"],
+    "location": "Caracas",
+    "price": 100,
+    "popularity": 85
+  },
+  {
+    "name": "Logitech G502 Hero Gaming Mouse",
+    "description": "High-accuracy gaming mouse with HERO 25K sensor and customizable weights",
+    "category": "electronics",
+    "subcategories": ["mouse", "gaming"],
+    "location": "Maracaibo",
+    "price": 60,
+    "popularity": 91
+  },
+  {
+    "name": "LG OLED EVO 55\" Smart TV",
+    "description": "Premium 4K OLED TV with Dolby Vision and 120Hz refresh rate",
+    "category": "electronics",
+    "subcategories": ["tv", "home-theater"],
+    "location": "Caracas",
+    "price": 1400,
+    "popularity": 94
+  },
+  {
+    "name": "PlayStation 5 Slim Console",
+    "description": "The new slimmer version of Sony's next-generation gaming console",
+    "category": "electronics",
+    "subcategories": ["consoles", "gaming"],
+    "location": "San Cristóbal",
+    "price": 500,
+    "popularity": 97
+  },
+  {
+    "name": "Nintendo Switch OLED Edition",
+    "description": "Hybrid gaming console with a vibrant 7-inch OLED screen",
+    "category": "electronics",
+    "subcategories": ["consoles", "gaming"],
+    "location": "Mérida",
+    "price": 350,
+    "popularity": 89
+  },
+  {
+    "name": "Nespresso Vertuo Next Coffee Maker",
+    "description": "Single-serve coffee and espresso machine with Centrifusion technology",
+    "category": "home",
+    "subcategories": ["appliances", "coffee"],
+    "location": "Caracas",
+    "price": 180,
+    "popularity": 84
+  },
+  {
+    "name": "Ninja Professional Blender",
+    "description": "Powerful 1000W blender ideal for crushing ice and frozen fruits",
+    "category": "home",
+    "subcategories": ["appliances", "kitchen"],
+    "location": "Valencia",
+    "price": 120,
+    "popularity": 87
+  },
+  {
+    "name": "Cosori Pro II 5.8QT Air Fryer",
+    "description": "Smart air fryer with 12 customizable cooking functions",
+    "category": "home",
+    "subcategories": ["appliances", "kitchen"],
+    "location": "Maracaibo",
+    "price": 130,
+    "popularity": 93
+  },
+  {
+    "name": "iRobot Roomba j7 Robot Vacuum",
+    "description": "Smart robot vacuum with advanced obstacle avoidance technology",
+    "category": "home",
+    "subcategories": ["appliances", "cleaning"],
+    "location": "Caracas",
+    "price": 600,
+    "popularity": 86
+  },
+  {
+    "name": "FlexiSpot Electric Standing Desk",
+    "description": "Ergonomic height-adjustable desk with memory presets",
+    "category": "home",
+    "subcategories": ["furniture", "office"],
+    "location": "Barquisimeto",
+    "price": 300,
+    "popularity": 85
+  },
+  {
+    "name": "Xiaomi Mi Smart LED Desk Lamp Pro",
+    "description": "Smart LED desk lamp with adjustable color temperature and app control",
+    "category": "home",
+    "subcategories": ["lighting", "office"],
+    "location": "Mérida",
+    "price": 70,
+    "popularity": 82
+  },
+  {
+    "name": "Apple Watch Series 9",
+    "description": "Smartwatch featuring temperature sensing, ECG, and crash detection",
+    "category": "electronics",
+    "subcategories": ["smartwatch", "wearables"],
+    "location": "Caracas",
+    "price": 400,
+    "popularity": 91
+  },
+  {
+    "name": "Sony Alpha 7 IV Mirrorless Camera",
+    "description": "Versatile 33MP full-frame hybrid camera for professional photo and video",
+    "category": "electronics",
+    "subcategories": ["cameras", "photography"],
+    "location": "Valencia",
+    "price": 2500,
+    "popularity": 95
+  },
+  {
+    "name": "ASUS ROG Strix GeForce RTX 4070 OC",
+    "description": "High-end 12GB GDDR6X graphics card optimized for Ray Tracing",
+    "category": "electronics",
+    "subcategories": ["components", "gaming"],
+    "location": "Caracas",
+    "price": 750,
+    "popularity": 92
+  },
+  {
+    "name": "WD My Passport 2TB External Hard Drive",
+    "description": "Portable external storage with USB 3.0 and password protection",
+    "category": "electronics",
+    "subcategories": ["storage", "accessories"],
+    "location": "Maracaibo",
+    "price": 75,
+    "popularity": 88
+  },
+  {
+    "name": "XD Design Bobby Hero Anti-Theft Backpack",
+    "description": "Water-resistant backpack with hidden zippers and integrated USB charging port",
+    "category": "fashion",
+    "subcategories": ["bags", "accessories"],
+    "location": "San Cristóbal",
+    "price": 95,
+    "popularity": 83
+  },
+  {
+    "name": "Yeti Rambler 36 oz Bottle with Chug Cap",
+    "description": "Double-wall vacuum insulated stainless steel water bottle",
+    "category": "sports",
+    "subcategories": ["outdoors", "accessories"],
+    "location": "Mérida",
+    "price": 55,
+    "popularity": 90
+  },
+  {
+    "name": "Nike Air Max 270 Sneakers",
+    "description": "Ultra-comfortable lifestyle sneakers with signature visible Air unit",
+    "category": "fashion",
+    "subcategories": ["shoes", "sports"],
+    "location": "Caracas",
+    "price": 150,
+    "popularity": 94
+  },
+  {
+    "name": "Xiaomi Smart Band 8",
+    "description": "Fitness tracker with a vibrant AMOLED screen and SpO2 monitoring",
+    "category": "electronics",
+    "subcategories": ["wearables", "fitness"],
+    "location": "Valencia",
+    "price": 45,
+    "popularity": 89
+  },
+  {
+    "name": "Shure SM7B Cardioid Dynamic Microphone",
+    "description": "Professional dynamic microphone ideal for streaming, podcasting, and studio recording",
+    "category": "electronics",
+    "subcategories": ["audio", "streaming"],
+    "location": "Caracas",
+    "price": 400,
+    "popularity": 96
+  },
+  {
+    "name": "Anker Nebula Capsule II Portable Projector",
+    "description": "Pocket-sized smart projector with Android TV and built-in speaker",
+    "category": "electronics",
+    "subcategories": ["tv", "video"],
+    "location": "Maracaibo",
+    "price": 520,
+    "popularity": 85
+  },
+  {
+    "name": "JBL Flip 6 Portable Bluetooth Speaker",
+    "description": "IP67 waterproof portable speaker with rich 2-way sound",
+    "category": "electronics",
+    "subcategories": ["audio", "accessories"],
+    "location": "Barquisimeto",
+    "price": 110,
+    "popularity": 91
+  },
+  {
+    "name": "Apple iPad Air (5th Generation)",
+    "description": "Powerful tablet featuring a 10.9-inch Liquid Retina display and M1 chip",
+    "category": "electronics",
+    "subcategories": ["tablets", "ios"],
+    "location": "Caracas",
+    "price": 600,
+    "popularity": 93
+  }
+]
