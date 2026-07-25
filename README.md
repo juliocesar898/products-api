@@ -214,6 +214,17 @@ docs/postman/Products_API.postman_collection.json
 
 1. Open **Postman** and click **Import**.
 2. Select `docs/postman/Products_API.postman_collection.json`.
+    ## 📦 Postman Collection & Environments
+
+    A pre-configured Postman Collection and environment files are available under the `docs/postman/` directory:
+
+    ```text
+    docs/
+    └── postman/
+        ├── postman_collection.json
+        ├── dev.postman_environment
+        └── prd.postman_environment
+
 3. Set the `baseUrl` collection variable to match your environment:
    - **Local Environment:** `http://localhost:3000/api/v1`
    - **Remote Environment:** `http://137.184.27.89:3000/api/v1`

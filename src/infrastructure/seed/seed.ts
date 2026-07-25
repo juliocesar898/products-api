@@ -1,6 +1,6 @@
 import { Client } from '@elastic/elasticsearch';
 import Redis from 'ioredis';
-const productsData = require('./products.json');
+import * as productsData from './products.json';
 const elasticClient = new Client({
   node: process.env.ELASTICSEARCH_NODE || 'http://elasticsearch:9200',
 });
@@ -48,10 +48,15 @@ async function runSeed() {
     },
   });
 
-  console.log(`✅ Elasticsearch Index '${INDEX_NAME}' created with custom mappings.`);
+  console.log(
+    `✅ Elasticsearch Index '${INDEX_NAME}' created with custom mappings.`,
+  );
 
   const now = new Date();
-  for (const prod of productsData) {
+  const products = Array.isArray(productsData)
+    ? productsData
+    : (productsData as any).default;
+  for (const prod of products) {
     await elasticClient.index({
       index: INDEX_NAME,
       document: {
