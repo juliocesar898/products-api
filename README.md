@@ -216,45 +216,7 @@ docs/postman/Products_API.postman_collection.json
 2. Select `docs/postman/Products_API.postman_collection.json`.
 3. Set the `baseUrl` collection variable to match your environment:
    - **Local Environment:** `http://localhost:3000/api/v1`
-   - **Remote Environment:** `http://<YOUR_VPS_IP>:3000/api/v1`
-
----
-
-## 🌐 Remote Deployment Guide (DigitalOcean VPS)
-
-To deploy this application to an Ubuntu VPS instance:
-
-1. **SSH into your droplet**:
-
-   ```bash
-   ssh root@<DROPLET_IP>
-   ```
-
-2. **Install Docker & Git**:
-
-   ```bash
-   apt update && apt install -y docker.io docker-compose-v2 git
-   systemctl enable --now docker
-   ```
-
-3. **Clone & Launch**:
-
-   ```bash
-   git clone https://github.com/your-username/products-api.git
-   cd products-api
-   docker compose up -d --build
-   ```
-
-4. **Seed Remote Instance**:
-
-   ```bash
-   docker compose exec app npm run seed
-   ```
-
-5. **Test Remote Endpoint**:
-   ```bash
-   curl "http://<DROPLET_IP>:3000/api/v1/search/autocomplete?q=lap"
-   ```
+   - **Remote Environment:** `http://137.184.27.89:3000/api/v1`
 
 ---
 
